@@ -1,0 +1,369 @@
+/* Reset CSS và thiết lập cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Container chung */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header giống các trang khác */
+.header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* Menu điều hướng */
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #3498db;
+}
+
+.auth-btn {
+  background-color: #e74c3c;
+  border-radius: 20px;
+}
+
+/* Container chính cho chi tiết xe */
+.car-detail-container {
+  padding: 2rem 0;
+}
+
+/* Breadcrumb navigation */
+.breadcrumb {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Thông tin chính của xe sử dụng flexbox */
+.car-main-info {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Phần hình ảnh xe */
+.car-images {
+  flex: 1;
+  min-width: 400px;
+}
+
+.main-image {
+  margin-bottom: 1rem;
+}
+
+.main-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Thumbnail images sử dụng flexbox */
+.thumbnail-images {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  border-color: #3498db;
+}
+
+/* Thông tin cơ bản */
+.car-basic-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.car-basic-info h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 2rem;
+}
+
+/* Thông số kỹ thuật chính */
+.key-specs {
+  margin-bottom: 2rem;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.spec-label {
+  font-weight: 500;
+  color: #555;
+}
+
+.spec-value {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Nút liên hệ sử dụng flexbox */
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  flex: 1;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 200px;
+}
+
+.contact-btn.primary {
+  background-color: #27ae60;
+  color: white;
+}
+
+.contact-btn.primary:hover {
+  background-color: #219a52;
+}
+
+.contact-btn.secondary {
+  background-color: #3498db;
+  color: white;
+}
+
+.contact-btn.secondary:hover {
+  background-color: #2980b9;
+}
+
+/* Thông tin chi tiết */
+.detailed-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-section {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+/* Lưới thông số kỹ thuật sử dụng flexbox */
+.specs-grid {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.specs-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.specs-column h3 {
+  color: #3498db;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Lưới tính năng sử dụng flexbox */
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.feature-category {
+  flex: 1;
+  min-width: 250px;
+}
+
+.feature-category h3 {
+  color: #3498db;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.feature-category ul {
+  list-style: none;
+}
+
+.feature-category li {
+  padding: 0.3rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.feature-category li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  color: #3498db;
+}
+
+/* Responsive design cho mobile */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .car-main-info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .car-images {
+    min-width: auto;
+  }
+
+  .car-basic-info {
+    min-width: auto;
+  }
+
+  .car-basic-info h1 {
+    font-size: 2rem;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    min-width: auto;
+  }
+
+  .specs-grid,
+  .features-grid {
+    flex-direction: column;
+  }
+
+  .specs-column,
+  .feature-category {
+    min-width: auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
