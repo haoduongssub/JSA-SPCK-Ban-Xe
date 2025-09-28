@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSale - Xe Bán</title>
+    <link rel="stylesheet" href="assets/css/xe-ban.css">
+</head>
+<body>
+     Header Navigation - Thanh điều hướng chính 
+    <header class="header">
+        <nav class="nav-container">
+             Logo và tên thương hiệu 
+            <div class="logo">
+                <h1>AutoSale</h1>
+            </div>
+            
+             Menu điều hướng chính 
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                <li><a href="xe-ban.html" class="nav-link active">Xe Bán</a></li>
+                <li><a href="lien-he.html" class="nav-link">Liên Hệ</a></li>
+                <li><a href="dang-nhap.html" class="nav-link login-btn">Đăng Nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     Page Header - Tiêu đề trang 
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Danh Sách Xe Bán</h1>
+            <p class="page-subtitle">Tìm kiếm chiếc xe phù hợp với nhu cầu của bạn</p>
+        </div>
+    </section>
+
+     Filter Section - Phần bộ lọc tìm kiếm 
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <h3 class="filter-title">Bộ Lọc Tìm Kiếm</h3>
+                
+                 Các bộ lọc sử dụng flexbox 
+                <div class="filter-grid">
+                     Lọc theo hãng xe 
+                    <div class="filter-group">
+                        <label class="filter-label">Hãng Xe:</label>
+                        <select class="filter-select">
+                            <option value="">Tất cả</option>
+                            <option value="honda">Honda</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="hyundai">Hyundai</option>
+                        </select>
+                    </div>
+
+                     Lọc theo khoảng giá 
+                    <div class="filter-group">
+                        <label class="filter-label">Khoảng Giá:</label>
+                        <select class="filter-select">
+                            <option value="">Tất cả</option>
+                            <option value="0-500">Dưới 500 triệu</option>
+                            <option value="500-800">500 - 800 triệu</option>
+                            <option value="800-1200">800 triệu - 1.2 tỷ</option>
+                            <option value="1200+">Trên 1.2 tỷ</option>
+                        </select>
+                    </div>
+
+                     Lọc theo năm sản xuất 
+                    <div class="filter-group">
+                        <label class="filter-label">Năm Sản Xuất:</label>
+                        <select class="filter-select">
+                            <option value="">Tất cả</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+
+                     Nút tìm kiếm 
+                    <div class="filter-group">
+                        <button class="search-btn">Tìm Kiếm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Cars Listing - Danh sách xe 
+    <section class="cars-listing">
+        <div class="container">
+             Thông tin số lượng xe 
+            <div class="listing-header">
+                <h2 class="listing-title">Có 12 xe phù hợp</h2>
+                <div class="sort-options">
+                    <label>Sắp xếp theo:</label>
+                    <select class="sort-select">
+                        <option value="newest">Mới nhất</option>
+                        <option value="price-low">Giá thấp đến cao</option>
+                        <option value="price-high">Giá cao đến thấp</option>
+                        <option value="year">Năm sản xuất</option>
+                    </select>
+                </div>
+            </div>
+
+             Grid danh sách xe sử dụng flexbox 
+            <div class="cars-grid">
+                 Card xe Honda Civic 
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Honda Civic 2023" class="car-image">
+                        <div class="car-badge">Mới</div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Honda Civic 2023</h3>
+                        <p class="car-price">850,000,000 VNĐ</p>
+                        <div class="car-specs">
+                            <span class="spec-item">Số tự động</span>
+                            <span class="spec-item">50,000 km</span>
+                            <span class="spec-item">Xăng</span>
+                        </div>
+                        <div class="car-location">
+                            <span>📍 TP. Hồ Chí Minh</span>
+                        </div>
+                        <a href="honda-civic.html" class="view-details-btn">Xem Chi Tiết</a>
+                    </div>
+                </div>
+
+                 Card xe Toyota Camry 
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Toyota Camry 2022" class="car-image">
+                        <div class="car-badge featured">Nổi bật</div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Toyota Camry 2022</h3>
+                        <p class="car-price">1,200,000,000 VNĐ</p>
+                        <div class="car-specs">
+                            <span class="spec-item">Số tự động</span>
+                            <span class="spec-item">30,000 km</span>
+                            <span class="spec-item">Xăng</span>
+                        </div>
+                        <div class="car-location">
+                            <span>📍 Hà Nội</span>
+                        </div>
+                        <a href="toyota-camry.html" class="view-details-btn">Xem Chi Tiết</a>
+                    </div>
+                </div>
+
+                 Card xe Mazda CX-5 
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Mazda CX-5 2023" class="car-image">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Mazda CX-5 2023</h3>
+                        <p class="car-price">950,000,000 VNĐ</p>
+                        <div class="car-specs">
+                            <span class="spec-item">Số tự động</span>
+                            <span class="spec-item">25,000 km</span>
+                            <span class="spec-item">Xăng</span>
+                        </div>
+                        <div class="car-location">
+                            <span>📍 Đà Nẵng</span>
+                        </div>
+                        <a href="mazda-cx5.html" class="view-details-btn">Xem Chi Tiết</a>
+                    </div>
+                </div>
+
+                 Card xe Hyundai Tucson 
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Hyundai Tucson 2022" class="car-image">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Hyundai Tucson 2022</h3>
+                        <p class="car-price">780,000,000 VNĐ</p>
+                        <div class="car-specs">
+                            <span class="spec-item">Số tự động</span>
+                            <span class="spec-item">40,000 km</span>
+                            <span class="spec-item">Xăng</span>
+                        </div>
+                        <div class="car-location">
+                            <span>📍 TP. Hồ Chí Minh</span>
+                        </div>
+                        <a href="#" class="view-details-btn">Xem Chi Tiết</a>
+                    </div>
+                </div>
+
+                 Card xe Honda CR-V 
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Honda CR-V 2021" class="car-image">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Honda CR-V 2021</h3>
+                        <p class="car-price">920,000,000 VNĐ</p>
+                        <div class="car-specs">
+                            <span class="spec-item">Số tự động</span>
+                            <span class="spec-item">35,000 km</span>
+                            <span class="spec-item">Xăng</span>
+                        </div>
+                        <div class="car-location">
+                            <span>📍 Cần Thơ</span>
+                        </div>
+                        <a href="#" class="view-details-btn">Xem Chi Tiết</a>
+                    </div>
+                </div>
+
+                 Card xe Toyota Vios 
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Toyota Vios 2022" class="car-image">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Toyota Vios 2022</h3>
+                        <p class="car-price">520,000,000 VNĐ</p>
+                        <div class="car-specs">
+                            <span class="spec-item">Số tự động</span>
+                            <span class="spec-item">20,000 km</span>
+                            <span class="spec-item">Xăng</span>
+                        </div>
+                        <div class="car-location">
+                            <span>📍 Hà Nội</span>
+                        </div>
+                        <a href="#" class="view-details-btn">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+             Pagination - Phân trang 
+            <div class="pagination">
+                <button class="page-btn prev" disabled>« Trước</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn next">Sau »</button>
+            </div>
+        </div>
+    </section>
+
+     Footer - Chân trang với thông tin liên hệ 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                 Thông tin công ty 
+                <div class="footer-section">
+                    <h3 class="footer-title">AutoSale</h3>
+                    <p class="footer-text">Địa chỉ uy tín cho việc mua bán xe hơi</p>
+                </div>
+
+                 Thông tin liên hệ 
+                <div class="footer-section">
+                    <h3 class="footer-title">Liên Hệ</h3>
+                    <p class="footer-text">Điện thoại: 0123-456-789</p>
+                    <p class="footer-text">Email: info@autosale.vn</p>
+                    <p class="footer-text">Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

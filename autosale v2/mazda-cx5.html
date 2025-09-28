@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSale - Mazda CX-5 2023</title>
+    <link rel="stylesheet" href="assets/css/chi-tiet-xe.css">
+</head>
+<body>
+     Header Navigation - Thanh điều hướng chính 
+    <header class="header">
+        <nav class="nav-container">
+             Logo và tên thương hiệu 
+            <div class="logo">
+                <h1>AutoSale</h1>
+            </div>
+            
+             Menu điều hướng chính 
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                <li><a href="xe-ban.html" class="nav-link">Xe Bán</a></li>
+                <li><a href="lien-he.html" class="nav-link">Liên Hệ</a></li>
+                <li><a href="dang-nhap.html" class="nav-link login-btn">Đăng Nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     Breadcrumb Navigation - Đường dẫn trang 
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html" class="breadcrumb-link">Trang Chủ</a>
+                <span class="breadcrumb-separator">></span>
+                <a href="xe-ban.html" class="breadcrumb-link">Xe Bán</a>
+                <span class="breadcrumb-separator">></span>
+                <span class="breadcrumb-current">Mazda CX-5 2023</span>
+            </nav>
+        </div>
+    </section>
+
+     Car Detail Content - Nội dung chi tiết xe 
+    <section class="car-detail">
+        <div class="container">
+            <div class="detail-wrapper">
+                 Car Images - Phần hình ảnh xe 
+                <div class="car-images">
+                    <div class="main-image">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Mazda CX-5 2023" class="main-car-image">
+                    </div>
+                    
+                     Thumbnail images 
+                    <div class="thumbnail-images">
+                        <img src="/placeholder.svg?height=100&width=150" alt="Góc trước" class="thumbnail active">
+                        <img src="/placeholder.svg?height=100&width=150" alt="Góc bên" class="thumbnail">
+                        <img src="/placeholder.svg?height=100&width=150" alt="Góc sau" class="thumbnail">
+                        <img src="/placeholder.svg?height=100&width=150" alt="Nội thất" class="thumbnail">
+                    </div>
+                </div>
+
+                 Car Information - Thông tin xe 
+                <div class="car-info">
+                    <div class="car-header">
+                        <h1 class="car-title">Mazda CX-5 2023</h1>
+                        <div class="car-price">950,000,000 VNĐ</div>
+                        <div class="car-status">
+                            <span class="status-badge available">Còn hàng</span>
+                            <span class="view-count">👁️ 987 lượt xem</span>
+                        </div>
+                    </div>
+
+                     Quick specs 
+                    <div class="quick-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Năm sản xuất:</span>
+                            <span class="spec-value">2023</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Số km đã đi:</span>
+                            <span class="spec-value">25,000 km</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Nhiên liệu:</span>
+                            <span class="spec-value">Xăng</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hộp số:</span>
+                            <span class="spec-value">Số tự động</span>
+                        </div>
+                    </div>
+
+                     Action buttons 
+                    <div class="action-buttons">
+                        <button class="btn primary">📞 Gọi Ngay</button>
+                        <button class="btn secondary">💬 Nhắn Tin</button>
+                        <button class="btn outline">❤️ Yêu Thích</button>
+                    </div>
+
+                     Seller info 
+                    <div class="seller-info">
+                        <h3 class="seller-title">Thông Tin Người Bán</h3>
+                        <div class="seller-details">
+                            <div class="seller-avatar">👤</div>
+                            <div class="seller-content">
+                                <h4 class="seller-name">Lê Văn C</h4>
+                                <p class="seller-location">📍 Đà Nẵng</p>
+                                <p class="seller-phone">📞 0369-258-147</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             Detailed Information - Thông tin chi tiết 
+            <div class="detailed-info">
+                 Tabs navigation 
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="specs">Thông Số Kỹ Thuật</button>
+                    <button class="tab-btn" data-tab="description">Mô Tả</button>
+                    <button class="tab-btn" data-tab="features">Tính Năng</button>
+                </div>
+
+                 Tab content 
+                <div class="tab-content">
+                     Specifications tab 
+                    <div class="tab-panel active" id="specs">
+                        <div class="specs-grid">
+                            <div class="specs-section">
+                                <h3 class="specs-title">Thông Tin Cơ Bản</h3>
+                                <div class="specs-list">
+                                    <div class="specs-item">
+                                        <span class="specs-label">Hãng xe:</span>
+                                        <span class="specs-value">Mazda</span>
+                                    </div>
+                                    <div class="specs-item">
+                                        <span class="specs-label">Dòng xe:</span>
+                                        <span class="specs-value">CX-5</span>
+                                    </div>
+                                    <div class="specs-item">
+                                        <span class="specs-label">Phiên bản:</span>
+                                        <span class="specs-value">2.0 Premium</span>
+                                    </div>
+                                    <div class="specs-item">
+                                        <span class="specs-label">Năm sản xuất:</span>
+                                        <span class="specs-value">2023</span>
+                                    </div>
+                                    <div class="specs-item">
+                                        <span class="specs-label">Xuất xứ:</span>
+                                        <span class="specs-value">Nhật Bản</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="specs-section">
+                                <h3 class="specs-title">Động Cơ & Vận Hành</h3>
+                                <div class="specs-list">
+                                    <div class="specs-item">
+                                        <span class="specs-label">Động cơ:</span>
+                                        <span class="specs-value">2.0L SKYACTIV-G</span>
+                                    </div>
+                                    <div class="specs-item">
+                                        <span class="specs-label">Công suất:</span>
+                                        <span class="specs-value">165 HP</span>
+                                    </div>
+                                    <div class="specs-item">
+                                        <span class="specs-label">Mô-men xoắn:</span>
+                                        <span class="specs-value">213 Nm</span>
+                                    </div>
+                                    <div class="specs-item">
+                                        <span class="specs-label">Hộp số:</span>
+                                        <span class="specs-value">6AT</span>
+                                    </div>
+                                    <div class="specs-item">
+                                        <span class="specs-label">Dẫn động:</span>
+                                        <span class="specs-value">Cầu trước</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     Description tab 
+                    <div class="tab-panel" id="description">
+                        <div class="description-content">
+                            <h3>Mô Tả Chi Tiết</h3>
+                            <p>Mazda CX-5 2023 là mẫu SUV 5 chỗ với thiết kế KODO đầy cảm xúc và công nghệ SKYACTIV tiên tiến. Xe mang đến trải nghiệm lái thể thao và tiết kiệm nhiên liệu.</p>
+                            
+                            <h4>Điểm Nổi Bật:</h4>
+                            <ul>
+                                <li>Thiết kế KODO đẹp mắt và thể thao</li>
+                                <li>Nội thất cao cấp với chất liệu da Nappa</li>
+                                <li>Động cơ SKYACTIV-G 2.0L tiết kiệm nhiên liệu</li>
+                                <li>Hệ thống an toàn i-ACTIVSENSE</li>
+                                <li>Màn hình giải trí Mazda Connect 10.25 inch</li>
+                            </ul>
+
+                            <h4>Tình Trạng Xe:</h4>
+                            <p>Xe đã qua sử dụng 25,000km, được bảo dưỡng định kỳ tại Mazda. Ngoại thất và nội thất còn rất đẹp, không có trầy xước hay hư hỏng. Xe có đầy đủ giấy tờ pháp lý, bảo hành chính hãng còn 1.5 năm.</p>
+                        </div>
+                    </div>
+
+                     Features tab 
+                    <div class="tab-panel" id="features">
+                        <div class="features-grid">
+                            <div class="feature-category">
+                                <h3>An Toàn</h3>
+                                <ul class="feature-list">
+                                    <li>✅ i-ACTIVSENSE</li>
+                                    <li>✅ 6 túi khí</li>
+                                    <li>✅ Camera 360 độ</li>
+                                    <li>✅ Cảnh báo điểm mù</li>
+                                    <li>✅ Kiểm soát hành trình thích ứng</li>
+                                </ul>
+                            </div>
+
+                            <div class="feature-category">
+                                <h3>Tiện Nghi</h3>
+                                <ul class="feature-list">
+                                    <li>✅ Điều hòa tự động 2 vùng</li>
+                                    <li>✅ Khởi động thông minh</li>
+                                    <li>✅ Cửa sổ trời điện</li>
+                                    <li>✅ Ghế da Nappa</li>
+                                    <li>✅ Sạc không dây</li>
+                                </ul>
+                            </div>
+
+                            <div class="feature-category">
+                                <h3>Giải Trí</h3>
+                                <ul class="feature-list">
+                                    <li>✅ Màn hình 10.25 inch</li>
+                                    <li>✅ Apple CarPlay</li>
+                                    <li>✅ Android Auto</li>
+                                    <li>✅ Hệ thống âm thanh Bose 10 loa</li>
+                                    <li>✅ Kết nối Bluetooth</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             Related Cars - Xe liên quan 
+            <div class="related-cars">
+                <h2 class="section-title">Xe Tương Tự</h2>
+                <div class="cars-grid">
+                    <div class="car-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Honda Civic 2023" class="car-image">
+                        <div class="car-info">
+                            <h3 class="car-name">Honda Civic 2023</h3>
+                            <p class="car-price">850,000,000 VNĐ</p>
+                            <a href="honda-civic.html" class="view-details-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+
+                    <div class="car-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Toyota Camry 2022" class="car-image">
+                        <div class="car-info">
+                            <h3 class="car-name">Toyota Camry 2022</h3>
+                            <p class="car-price">1,200,000,000 VNĐ</p>
+                            <a href="toyota-camry.html" class="view-details-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Footer - Chân trang với thông tin liên hệ 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                 Thông tin công ty 
+                <div class="footer-section">
+                    <h3 class="footer-title">AutoSale</h3>
+                    <p class="footer-text">Địa chỉ uy tín cho việc mua bán xe hơi</p>
+                </div>
+
+                 Thông tin liên hệ 
+                <div class="footer-section">
+                    <h3 class="footer-title">Liên Hệ</h3>
+                    <p class="footer-text">Điện thoại: 0123-456-789</p>
+                    <p class="footer-text">Email: info@autosale.vn</p>
+                    <p class="footer-text">Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
