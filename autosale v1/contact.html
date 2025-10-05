@@ -3,73 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoSale - Liên Hệ</title>
-    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>Liên Hệ - AutoSale Showroom</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+     Header 
     <header class="header">
         <div class="container">
-            <div class="logo">
-                <h1><a href="index.html">AutoSale</a></h1>
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>🚗 AutoSale</h1>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Trang Chủ</a>
+                    <a href="cars.html" class="nav-link">Xe Bán</a>
+                    <a href="contact.html" class="nav-link active">Liên Hệ</a>
+                </nav>
             </div>
-            <nav class="nav">
-                <a href="index.html" class="nav-link">Trang Chủ</a>
-                <a href="cars.html" class="nav-link">Xe Bán</a>
-                <a href="contact.html" class="nav-link active">Liên Hệ</a>
-                <a href="auth.html" class="nav-link auth-btn" id="authLink">Đăng Nhập</a>
-            </nav>
         </div>
     </header>
 
-    <!-- Phần liên hệ chính -->
-    <main class="contact-container">
+     Contact Section 
+    <section class="contact-section">
         <div class="container">
-            <h1 class="page-title">Liên Hệ Với Chúng Tôi</h1>
+            <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
             
-            <!-- Thông tin liên hệ và form sử dụng flexbox -->
-            <div class="contact-content">
-                <!-- Thông tin liên hệ -->
-                <div class="contact-info">
-                    <h2>Thông Tin Liên Hệ</h2>
-                    
-                    <div class="info-item">
-                        <h3>Địa Chỉ Showroom</h3>
-                        <p>123 Đường Nguyễn Văn Linh<br>
-                        Quận 7, TP. Hồ Chí Minh</p>
-                    </div>
-                    
-                    <div class="info-item">
-                        <h3>Điện Thoại</h3>
-                        <p>Hotline: <a href="tel:0123456789">0123-456-789</a><br>
-                        Zalo: <a href="tel:0987654321">0987-654-321</a></p>
-                    </div>
-                    
-                    <div class="info-item">
-                        <h3>Email</h3>
-                        <p>Tư vấn: <a href="mailto:tuvan@autosale.vn">tuvan@autosale.vn</a><br>
-                        Hỗ trợ: <a href="mailto:hotro@autosale.vn">hotro@autosale.vn</a></p>
-                    </div>
-                    
-                    <div class="info-item">
-                        <h3>Giờ Làm Việc</h3>
-                        <p>Thứ 2 - Thứ 6: 8:00 - 18:00<br>
-                        Thứ 7 - Chủ nhật: 8:00 - 17:00</p>
-                    </div>
-                    
-                    <!-- Bản đồ giả lập -->
-                    <div class="map-placeholder">
-                        <img src="/placeholder.svg?height=200&width=400" alt="Bản đồ vị trí showroom">
-                        <p>Bản đồ vị trí showroom</p>
-                    </div>
-                </div>
-
-                <!-- Form liên hệ -->
-                <div class="contact-form-section">
-                    <h2>Gửi Tin Nhắn</h2>
-                    <form id="contactForm" class="contact-form">
+             Contact Form 
+            <div class="contact-form-wrapper">
+                <div class="contact-form-container">
+                    <h3>Gửi Tin Nhắn</h3>
+                    <form class="contact-form">
                         <div class="form-group">
-                            <label for="name">Họ và tên *</label>
+                            <label for="name">Họ và Tên *</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         
@@ -79,196 +44,97 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="phone">Số điện thoại *</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Số Điện Thoại</label>
+                            <input type="tel" id="phone" name="phone">
                         </div>
                         
                         <div class="form-group">
-                            <label for="subject">Chủ đề</label>
+                            <label for="subject">Chủ Đề</label>
                             <select id="subject" name="subject">
-                                <option value="tuvan">Tư vấn mua xe</option>
-                                <option value="banxe">Bán xe</option>
-                                <option value="baohanh">Bảo hành - Bảo dưỡng</option>
-                                <option value="khac">Khác</option>
+                                <option value="">Chọn chủ đề</option>
+                                <option value="buy">Mua xe</option>
+                                <option value="sell">Bán xe</option>
+                                <option value="service">Dịch vụ</option>
+                                <option value="other">Khác</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
-                            <label for="message">Nội dung tin nhắn *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Nhập nội dung tin nhắn của bạn..."></textarea>
+                            <label for="message">Tin Nhắn *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         
-                        <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
+                        <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
                     </form>
                 </div>
             </div>
-            
-            <!-- Câu hỏi thường gặp -->
-            <div class="faq-section">
-                <h2>Câu Hỏi Thường Gặp</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <h3 class="faq-question" onclick="toggleFAQ(this)">
-                            Làm thế nào để mua xe tại AutoSale?
-                            <span class="faq-toggle">+</span>
-                        </h3>
-                        <div class="faq-answer">
-                            <p>Bạn có thể xem xe trực tiếp tại showroom, liên hệ tư vấn qua hotline, hoặc đăng ký lái thử trên website. Chúng tôi sẽ hỗ trợ tư vấn và thủ tục mua xe từ A-Z.</p>
+
+             Contact Information - Moved to bottom as requested 
+            <div class="contact-info-section">
+                <div class="contact-info-container">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <div class="contact-info-grid">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Địa Chỉ</h4>
+                                <p>123 Đường ABC, Phường XYZ<br>Quận 1, TP. Hồ Chí Minh</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <h3 class="faq-question" onclick="toggleFAQ(this)">
-                            AutoSale có hỗ trợ vay mua xe không?
-                            <span class="faq-toggle">+</span>
-                        </h3>
-                        <div class="faq-answer">
-                            <p>Có, chúng tôi hỗ trợ vay mua xe với lãi suất ưu đãi từ các ngân hàng đối tác. Thủ tục nhanh chóng, duyệt vay trong 24h.</p>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Điện Thoại</h4>
+                                <p>Hotline: 0123 456 789<br>Zalo: 0987 654 321</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <h3 class="faq-question" onclick="toggleFAQ(this)">
-                            Xe có được bảo hành không?
-                            <span class="faq-toggle">+</span>
-                        </h3>
-                        <div class="faq-answer">
-                            <p>Tất cả xe bán tại AutoSale đều được bảo hành từ 6 tháng đến 2 năm tùy theo từng dòng xe. Bảo hành toàn diện về máy móc và điện tử.</p>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@autosale.vn<br>support@autosale.vn</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <h3 class="faq-question" onclick="toggleFAQ(this)">
-                            Tôi có thể bán xe cũ tại AutoSale không?
-                            <span class="faq-toggle">+</span>
-                        </h3>
-                        <div class="faq-answer">
-                            <p>Có, chúng tôi nhận mua xe cũ với giá tốt nhất thị trường. Thủ tục nhanh gọn, thanh toán ngay khi hoàn tất giấy tờ.</p>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-details">
+                                <h4>Giờ Làm Việc</h4>
+                                <p>T2-T6: 8:00 - 18:00<br>T7-CN: 8:00 - 17:00</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Footer -->
+     Footer 
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>AutoSale</h3>
-                    <p>Địa chỉ uy tín cho việc mua bán xe hơi</p>
+                    <h3>AutoSale Showroom</h3>
+                    <p>Showroom ô tô uy tín với hơn 10 năm kinh nghiệm</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Liên Hệ</h3>
-                    <p>Điện thoại: 0123-456-789</p>
-                    <p>Email: info@autosale.vn</p>
+                    <h4>Liên Hệ</h4>
+                    <p>📍 123 Đường ABC, Quận 1, TP.HCM</p>
+                    <p>📞 0123 456 789</p>
+                    <p>✉️ info@autosale.vn</p>
                 </div>
+                <div class="footer-section">
+                    <h4>Giờ Mở Cửa</h4>
+                    <p>Thứ 2 - Thứ 6: 8:00 - 18:00</p>
+                    <p>Thứ 7 - Chủ Nhật: 8:00 - 17:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoSale. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Thông báo -->
-    <div id="notification" class="notification hidden"></div>
-
-    <!-- JavaScript cho form liên hệ và FAQ -->
-    <script>
-        // Kiểm tra trạng thái đăng nhập
-        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-        const authLink = document.getElementById('authLink');
-        
-        if (currentUser) {
-            authLink.textContent = `Xin chào, ${currentUser.name}`;
-            authLink.href = '#';
-            authLink.addEventListener('click', function(e) {
-                e.preventDefault();
-                if (confirm('Bạn có muốn đăng xuất?')) {
-                    localStorage.removeItem('currentUser');
-                    window.location.reload();
-                }
-            });
-            
-            // Tự động điền thông tin nếu đã đăng nhập
-            document.getElementById('name').value = currentUser.name;
-            document.getElementById('email').value = currentUser.email;
-            if (currentUser.phone) {
-                document.getElementById('phone').value = currentUser.phone;
-            }
-        }
-
-        // Hàm hiển thị thông báo
-        function showNotification(message, type = 'success') {
-            const notification = document.getElementById('notification');
-            notification.textContent = message;
-            notification.className = `notification ${type}`;
-            notification.classList.remove('hidden');
-            
-            setTimeout(() => {
-                notification.classList.add('hidden');
-            }, 3000);
-        }
-
-        // Xử lý form liên hệ
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Lấy dữ liệu từ form
-            const formData = new FormData(this);
-            const contactData = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                phone: formData.get('phone'),
-                subject: formData.get('subject'),
-                message: formData.get('message'),
-                submitTime: new Date().toISOString()
-            };
-
-            // Lưu tin nhắn vào localStorage
-            const messages = JSON.parse(localStorage.getItem('contactMessages') || '[]');
-            messages.push(contactData);
-            localStorage.setItem('contactMessages', JSON.stringify(messages));
-            
-            showNotification('Tin nhắn đã được gửi thành công! Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.', 'success');
-            
-            // Reset form
-            this.reset();
-            
-            // Tự động điền lại thông tin nếu đã đăng nhập
-            if (currentUser) {
-                document.getElementById('name').value = currentUser.name;
-                document.getElementById('email').value = currentUser.email;
-                if (currentUser.phone) {
-                    document.getElementById('phone').value = currentUser.phone;
-                }
-            }
-        });
-
-        // Hàm toggle FAQ
-        function toggleFAQ(element) {
-            const faqItem = element.parentElement;
-            const answer = faqItem.querySelector('.faq-answer');
-            const toggle = element.querySelector('.faq-toggle');
-            
-            // Đóng tất cả FAQ khác
-            document.querySelectorAll('.faq-item').forEach(item => {
-                if (item !== faqItem) {
-                    item.classList.remove('active');
-                    item.querySelector('.faq-answer').style.display = 'none';
-                    item.querySelector('.faq-toggle').textContent = '+';
-                }
-            });
-            
-            // Toggle FAQ hiện tại
-            if (faqItem.classList.contains('active')) {
-                faqItem.classList.remove('active');
-                answer.style.display = 'none';
-                toggle.textContent = '+';
-            } else {
-                faqItem.classList.add('active');
-                answer.style.display = 'block';
-                toggle.textContent = '-';
-            }
-        }
-    </script>
 </body>
 </html>
