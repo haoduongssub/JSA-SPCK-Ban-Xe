@@ -1,0 +1,333 @@
+/* ===== RESET VÀ THIẾT LẬP CƠ BẢN ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #f5f5f0;
+}
+
+/* Container chung cho toàn bộ nội dung */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER - THANH ĐIỀU HƯỚNG ===== */
+.header {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  position: relative;
+}
+
+.header .container {
+  position: relative;
+}
+
+/* Logo bên trái */
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.logo h1 {
+  color: #f5f5f0;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Menu điều hướng bên phải */
+.navigation {
+  display: inline-block;
+  vertical-align: middle;
+  width: 68%;
+  text-align: right;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.nav-link {
+  color: #f5f5f0;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #d4af37;
+}
+
+.nav-link.active {
+  color: #d4af37;
+  border-bottom: 2px solid #d4af37;
+}
+
+/* Nút đăng nhập đặc biệt */
+.btn-login {
+  background-color: #d4af37;
+  color: #1a1a1a;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.btn-login:hover {
+  background-color: #c19b2e;
+  color: #1a1a1a;
+}
+
+/* ===== HERO SECTION - BANNER CHÍNH ===== */
+.hero {
+  background-color: #2a2a2a;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/placeholder.svg?height=400&width=1200");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero-title {
+  color: #f5f5f0;
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-description {
+  color: #e0e0e0;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== PHẦN DANH SÁCH XE ===== */
+.cars-section {
+  padding: 80px 0;
+  background-color: #f5f5f0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 60px;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+/* Grid hiển thị xe - Sử dụng inline-block thay vì flexbox/grid */
+.cars-grid {
+  text-align: center;
+  font-size: 0; /* Loại bỏ khoảng trắng giữa các inline-block */
+}
+
+/* Mỗi thẻ xe */
+.car-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 0 1% 40px 1%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 16px; /* Reset font-size */
+  transition: transform 0.3s;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Hình ảnh xe */
+.car-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Thông tin xe */
+.car-info {
+  padding: 25px;
+}
+
+.car-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.car-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.car-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+/* Các nút hành động */
+.car-actions {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-detail {
+  background-color: #1a1a1a;
+  color: #f5f5f0;
+}
+
+.btn-detail:hover {
+  background-color: #333;
+}
+
+.btn-cart {
+  background-color: #d4af37;
+  color: #1a1a1a;
+}
+
+.btn-cart:hover {
+  background-color: #c19b2e;
+}
+
+/* ===== FOOTER - CHÂN TRANG ===== */
+.footer {
+  background-color: #1a1a1a;
+  color: #f5f5f0;
+  padding: 50px 0 20px 0;
+}
+
+.footer-content {
+  text-align: left;
+  font-size: 0;
+  margin-bottom: 30px;
+}
+
+/* Các cột trong footer */
+.footer-section {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 0 1%;
+  font-size: 14px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #d4af37;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+/* Danh sách liên kết trong footer */
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #f5f5f0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #d4af37;
+}
+
+/* Phần bản quyền */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #999;
+}
+
+/* ===== RESPONSIVE - ĐIỀU CHỈNH CHO MÀN HÌNH NHỎ ===== */
+@media (max-width: 768px) {
+  /* Header responsive */
+  .logo,
+  .navigation {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 10px 15px;
+  }
+
+  /* Hero responsive */
+  .hero-title {
+    font-size: 32px;
+  }
+
+  /* Card xe responsive - hiển thị 1 cột */
+  .car-card {
+    width: 98%;
+    margin: 0 1% 30px 1%;
+  }
+
+  /* Footer responsive */
+  .footer-section {
+    width: 98%;
+    margin: 0 1% 20px 1%;
+  }
+}

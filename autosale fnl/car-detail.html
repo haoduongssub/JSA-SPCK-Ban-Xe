@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết xe - AutoViet</title>
+    <link rel="stylesheet" href="assets/css/car-detail.css">
+</head>
+<body>
+     <!-- PHẦN HEADER - Thanh điều hướng  -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">AutoViet</a></h1>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item"><a href="cart.html" class="nav-link">Giỏ hàng</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- PHẦN NỘI DUNG CHI TIẾT XE  -->
+    <section class="detail-section">
+        <div class="container">
+             <!-- Breadcrumb - Đường dẫn điều hướng  -->
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb-link">Trang chủ</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current" id="breadcrumbName">Chi tiết xe</span>
+            </div>
+
+             <!-- Nội dung chi tiết  -->
+            <div class="detail-content">
+                 <!-- Cột bên trái - Hình ảnh xe  -->
+                <div class="detail-images">
+                    <div class="main-image">
+                        <img id="mainImage" src="/placeholder.svg?height=500&width=700" alt="Hình xe">
+                    </div>
+                    <div class="thumbnail-list">
+                        <div class="thumbnail active">
+                            <img src="/placeholder.svg?height=100&width=150" alt="Ảnh 1" onclick="changeImage(this)">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="/placeholder.svg?height=100&width=150" alt="Ảnh 2" onclick="changeImage(this)">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="/placeholder.svg?height=100&width=150" alt="Ảnh 3" onclick="changeImage(this)">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="/placeholder.svg?height=100&width=150" alt="Ảnh 4" onclick="changeImage(this)">
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Cột bên phải - Thông tin xe  -->
+                <div class="detail-info">
+                    <h1 class="car-title" id="carTitle">Đang tải...</h1>
+                    <p class="car-price" id="carPrice">0 VNĐ</p>
+                    
+                    <div class="car-description">
+                        <h3>Mô tả</h3>
+                        <p id="carDescription">Đang tải thông tin...</p>
+                    </div>
+
+                    <div class="car-specs">
+                        <h3>Thông số kỹ thuật</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td class="spec-label">Hãng xe:</td>
+                                <td class="spec-value" id="specBrand">-</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Năm sản xuất:</td>
+                                <td class="spec-value" id="specYear">-</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Động cơ:</td>
+                                <td class="spec-value" id="specEngine">-</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Hộp số:</td>
+                                <td class="spec-value" id="specTransmission">-</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Nhiên liệu:</td>
+                                <td class="spec-value" id="specFuel">-</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Số chỗ ngồi:</td>
+                                <td class="spec-value" id="specSeats">-</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Màu sắc:</td>
+                                <td class="spec-value" id="specColor">-</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Xuất xứ:</td>
+                                <td class="spec-value" id="specOrigin">-</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="car-actions">
+                        <button class="btn btn-cart" id="addToCartBtn" onclick="addToCartFromDetail()">
+                            <!-- Thêm vào giỏ hàng -->
+                        </button>
+                        <button class="btn btn-contact" onclick="window.location.href='contact.html'">
+                            <!-- Liên hệ tư vấn -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Phần mô tả chi tiết  -->
+            <div class="detail-description">
+                <h2>Thông tin chi tiết</h2>
+                <div class="description-content" id="detailDescription">
+                    <p>Đang tải thông tin chi tiết...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- PHẦN FOOTER  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AutoViet</h3>
+                    <p>Showroom xe hơi uy tín hàng đầu Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên kết</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="cart.html">Giỏ hàng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <p>Email: info@autoviet.vn</p>
+                    <p>Hotline: 1900 xxxx</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoViet. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- JAVASCRIPT - Xử lý hiển thị chi tiết xe  -->
+    <script src="assets/js/car-detail.js"></script>
+</body>
+</html>

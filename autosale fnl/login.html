@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - AutoViet</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+     <!-- PHẦN HEADER - Thanh điều hướng  -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">AutoViet</a></h1>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item"><a href="cart.html" class="nav-link">Giỏ hàng</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link active">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- PHẦN NỘI DUNG CHÍNH - Form đăng nhập  -->
+    <section class="auth-section">
+        <div class="auth-container">
+             Form đăng nhập 
+            <div class="auth-box" id="loginBox">
+                <h2 class="auth-title">Đăng nhập</h2>
+                <p class="auth-subtitle">Chào mừng bạn quay trở lại</p>
+                
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input 
+                            type="email" 
+                            id="loginEmail" 
+                            class="form-input" 
+                            placeholder="Nhập email của bạn"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="loginPassword" class="form-label">Mật khẩu</label>
+                        <input 
+                            type="password" 
+                            id="loginPassword" 
+                            class="form-input" 
+                            placeholder="Nhập mật khẩu"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-message" id="loginMessage"></div>
+                    
+                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                </form>
+                
+                <p class="auth-switch">
+                    <!-- Chưa có tài khoản?  -->
+                    <a href="#" onclick="showRegister(); return false;" class="auth-link">Đăng ký ngay</a>
+                </p>
+            </div>
+
+             <!-- Form đăng ký  -->
+            <div class="auth-box" id="registerBox" style="display: none;">
+                <h2 class="auth-title">Đăng ký</h2>
+                <p class="auth-subtitle">Tạo tài khoản mới</p>
+                
+                <form id="registerForm" onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <label for="registerName" class="form-label">Họ và tên</label>
+                        <input 
+                            type="text" 
+                            id="registerName" 
+                            class="form-input" 
+                            placeholder="Nhập họ và tên"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerEmail" class="form-label">Email</label>
+                        <input 
+                            type="email" 
+                            id="registerEmail" 
+                            class="form-input" 
+                            placeholder="Nhập email của bạn"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerPhone" class="form-label">Số điện thoại</label>
+                        <input 
+                            type="tel" 
+                            id="registerPhone" 
+                            class="form-input" 
+                            placeholder="Nhập số điện thoại"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerPassword" class="form-label">Mật khẩu</label>
+                        <input 
+                            type="password" 
+                            id="registerPassword" 
+                            class="form-input" 
+                            placeholder="Nhập mật khẩu (tối thiểu 6 ký tự)"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerConfirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                        <input 
+                            type="password" 
+                            id="registerConfirmPassword" 
+                            class="form-input" 
+                            placeholder="Nhập lại mật khẩu"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-message" id="registerMessage"></div>
+                    
+                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                </form>
+                
+                <p class="auth-switch">
+                    <!-- Đã có tài khoản?  -->
+                    <a href="#" onclick="showLogin(); return false;" class="auth-link">Đăng nhập</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+     <!-- PHẦN FOOTER  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AutoViet</h3>
+                    <p>Showroom xe hơi uy tín hàng đầu Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên kết</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="cart.html">Giỏ hàng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <p>Email: info@autoviet.vn</p>
+                    <p>Hotline: 1900 xxxx</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoViet. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- JAVASCRIPT - Xử lý đăng nhập và đăng ký  -->
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

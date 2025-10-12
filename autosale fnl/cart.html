@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - AutoViet</title>
+    <link rel="stylesheet" href="assets/css/cart.css">
+</head>
+<body>
+     <!-- PHẦN HEADER - Thanh điều hướng  -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">AutoViet</a></h1>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item"><a href="cart.html" class="nav-link active">Giỏ hàng</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- PHẦN NỘI DUNG GIỎ HÀNG  -->
+    <section class="cart-section">
+        <div class="container">
+            <h1 class="page-title">Giỏ hàng của bạn</h1>
+
+             <!-- Nội dung giỏ hàng  -->
+            <div class="cart-content">
+                 Danh sách sản phẩm trong giỏ 
+                <div class="cart-items" id="cartItems">
+                     <!-- Sẽ được render bằng JavaScript  -->
+                </div>
+
+                 <!-- Tổng kết đơn hàng  -->
+                <div class="cart-summary">
+                    <h2 class="summary-title">Tổng kết đơn hàng</h2>
+                    
+                    <div class="summary-row">
+                        <span class="summary-label">Tổng số xe:</span>
+                        <span class="summary-value" id="totalItems">0</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span class="summary-label">Tạm tính:</span>
+                        <span class="summary-value" id="subtotal">0 VNĐ</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span class="summary-label">Phí tư vấn:</span>
+                        <span class="summary-value">Miễn phí</span>
+                    </div>
+                    
+                    <div class="summary-divider"></div>
+                    
+                    <div class="summary-row summary-total">
+                        <span class="summary-label">Tổng cộng:</span>
+                        <span class="summary-value" id="totalPrice">0 VNĐ</span>
+                    </div>
+                    
+                    <div class="summary-actions">
+                        <button class="btn btn-primary" onclick="proceedToCheckout()">
+                            <!-- Tiến hành đặt hàng -->
+                        </button>
+                        <a href="index.html" class="btn btn-secondary">
+                            <!-- Tiếp tục mua sắm -->
+                        </a>
+                    </div>
+                    
+                    <div class="summary-note">
+                        <p>* Giá xe có thể thay đổi tùy theo chương trình khuyến mãi</p>
+                        <p>* Vui lòng liên hệ để được tư vấn chi tiết</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Thông báo giỏ hàng trống  -->
+            <div class="empty-cart" id="emptyCart" style="display: none;">
+                <div class="empty-icon">🛒</div>
+                <h2>Giỏ hàng của bạn đang trống</h2>
+                <p>Hãy khám phá các mẫu xe tuyệt vời của chúng tôi</p>
+                <a href="index.html" class="btn btn-primary">Xem xe ngay</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- PHẦN FOOTER  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AutoViet</h3>
+                    <p>Showroom xe hơi uy tín hàng đầu Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên kết</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="cart.html">Giỏ hàng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <p>Email: info@autoviet.vn</p>
+                    <p>Hotline: 1900 xxxx</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoViet. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- JAVASCRIPT - Xử lý giỏ hàng  -->
+    <script src="assets/js/cart-page.js"></script>
+</body>
+</html>

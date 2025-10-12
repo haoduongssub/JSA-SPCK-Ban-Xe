@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - AutoViet</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+     <!-- PHẦN HEADER - Thanh điều hướng  -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">AutoViet</a></h1>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item"><a href="cart.html" class="nav-link">Giỏ hàng</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Liên hệ</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- PHẦN BANNER LIÊN HỆ  -->
+    <section class="contact-banner">
+        <div class="banner-content">
+            <h1 class="banner-title">Liên hệ với chúng tôi</h1>
+            <p class="banner-description">Chúng tôi luôn sẵn sàng tư vấn và hỗ trợ bạn</p>
+        </div>
+    </section>
+
+     <!-- PHẦN NỘI DUNG LIÊN HỆ  -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                 <!-- Cột bên trái - Thông tin liên hệ  -->
+                <div class="contact-info">
+                    <h2 class="section-title">Thông tin liên hệ</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-details">
+                            <h3>Địa chỉ showroom</h3>
+                            <p>123 Đường Nguyễn Văn Linh, Quận 7, TP. Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-details">
+                            <h3>Hotline</h3>
+                            <p>1900 xxxx (8:00 - 20:00 hàng ngày)</p>
+                            <p>028 xxxx xxxx</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-details">
+                            <h3>Email</h3>
+                            <p>info@autoviet.vn</p>
+                            <p>support@autoviet.vn</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-details">
+                            <h3>Giờ làm việc</h3>
+                            <p>Thứ 2 - Thứ 7: 8:00 - 20:00</p>
+                            <p>Chủ nhật: 8:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Kết nối với chúng tôi</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">Facebook</a>
+                            <a href="#" class="social-icon">Instagram</a>
+                            <a href="#" class="social-icon">YouTube</a>
+                            <a href="#" class="social-icon">Zalo</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Cột bên phải - Form liên hệ  -->
+                <div class="contact-form-wrapper">
+                    <h2 class="section-title">Gửi tin nhắn cho chúng tôi</h2>
+                    <p class="form-description">Vui lòng điền thông tin bên dưới, chúng tôi sẽ liên hệ lại trong thời gian sớm nhất</p>
+                    
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Họ và tên *</label>
+                            <input 
+                                type="text" 
+                                id="contactName" 
+                                class="form-input" 
+                                placeholder="Nhập họ và tên của bạn"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Email *</label>
+                            <input 
+                                type="email" 
+                                id="contactEmail" 
+                                class="form-input" 
+                                placeholder="Nhập email của bạn"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactPhone" class="form-label">Số điện thoại *</label>
+                            <input 
+                                type="tel" 
+                                id="contactPhone" 
+                                class="form-input" 
+                                placeholder="Nhập số điện thoại"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject" class="form-label">Chủ đề</label>
+                            <select id="contactSubject" class="form-input">
+                                <option value="Tư vấn mua xe">Tư vấn mua xe</option>
+                                <option value="Hỏi về giá">Hỏi về giá</option>
+                                <option value="Đặt lịch xem xe">Đặt lịch xem xe</option>
+                                <option value="Hỗ trợ kỹ thuật">Hỗ trợ kỹ thuật</option>
+                                <option value="Khác">Khác</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Nội dung *</label>
+                            <textarea 
+                                id="contactMessage" 
+                                class="form-textarea" 
+                                rows="6"
+                                placeholder="Nhập nội dung tin nhắn của bạn..."
+                                required
+                            ></textarea>
+                        </div>
+                        
+                        <div class="form-message" id="contactFormMessage"></div>
+                        
+                        <button type="submit" class="btn btn-submit">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- PHẦN BẢN ĐỒ  -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Vị trí showroom</h2>
+            <div class="map-placeholder">
+                <p>Bản đồ Google Maps sẽ được hiển thị tại đây</p>
+                <p>123 Đường Nguyễn Văn Linh, Quận 7, TP. Hồ Chí Minh</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- PHẦN FOOTER  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AutoViet</h3>
+                    <p>Showroom xe hơi uy tín hàng đầu Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên kết</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="cart.html">Giỏ hàng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <p>Email: info@autoviet.vn</p>
+                    <p>Hotline: 1900 xxxx</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoViet. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- JAVASCRIPT - Xử lý form liên hệ  -->
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

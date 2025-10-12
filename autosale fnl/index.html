@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoViet - Showroom Xe Hơi Chất Lượng</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+     <!-- PHẦN HEADER - Thanh điều hướng chính  -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>AutoViet</h1>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Trang chủ</a></li>
+                    <li class="nav-item"><a href="cart.html" class="nav-link">Giỏ hàng</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link btn-login">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- PHẦN HERO - Banner chính giới thiệu  -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Khám phá bộ sưu tập xe hơi đẳng cấp</h2>
+            <p class="hero-description">Chúng tôi cung cấp những dòng xe chất lượng cao với giá cả hợp lý, phục vụ nhu cầu di chuyển của mọi gia đình Việt</p>
+        </div>
+    </section>
+
+     <!-- PHẦN DANH SÁCH XE - Hiển thị các xe đang bán  -->
+    <section class="cars-section">
+        <div class="container">
+            <h2 class="section-title">Xe đang kinh doanh</h2>
+            
+             <!-- Danh sách các xe  -->
+            <div class="cars-grid">
+                 Xe 1 
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Toyota Camry 2024">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Toyota Camry 2024</h3>
+                        <p class="car-description">Sedan hạng trung, động cơ 2.5L, tiết kiệm nhiên liệu</p>
+                        <p class="car-price">1.200.000.000 VNĐ</p>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=1" class="btn btn-detail">Chi tiết</a>
+                            <button class="btn btn-cart" onclick="addToCart(1, 'Toyota Camry 2024', '1.200.000.000')">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Xe 2  -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Honda CR-V 2024">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Honda CR-V 2024</h3>
+                        <p class="car-description">SUV 7 chỗ, động cơ turbo 1.5L, an toàn vượt trội</p>
+                        <p class="car-price">1.100.000.000 VNĐ</p>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=2" class="btn btn-detail">Chi tiết</a>
+                            <button class="btn btn-cart" onclick="addToCart(2, 'Honda CR-V 2024', '1.100.000.000')">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Xe 3  -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Mazda CX-5 2024">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Mazda CX-5 2024</h3>
+                        <p class="car-description">SUV 5 chỗ, thiết kế Kodo, công nghệ Skyactiv</p>
+                        <p class="car-price">900.000.000 VNĐ</p>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=3" class="btn btn-detail">Chi tiết</a>
+                            <button class="btn btn-cart" onclick="addToCart(3, 'Mazda CX-5 2024', '900.000.000')">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Xe 4  -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Hyundai Tucson 2024">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Hyundai Tucson 2024</h3>
+                        <p class="car-description">SUV hiện đại, công nghệ thông minh, tiện nghi cao cấp</p>
+                        <p class="car-price">850.000.000 VNĐ</p>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=4" class="btn btn-detail">Chi tiết</a>
+                            <button class="btn btn-cart" onclick="addToCart(4, 'Hyundai Tucson 2024', '850.000.000')">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Xe 5  -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Ford Ranger 2024">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Ford Ranger 2024</h3>
+                        <p class="car-description">Bán tải mạnh mẽ, động cơ diesel 2.0L, khả năng địa hình tốt</p>
+                        <p class="car-price">800.000.000 VNĐ</p>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=5" class="btn btn-detail">Chi tiết</a>
+                            <button class="btn btn-cart" onclick="addToCart(5, 'Ford Ranger 2024', '800.000.000')">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Xe 6  -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Kia Seltos 2024">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Kia Seltos 2024</h3>
+                        <p class="car-description">SUV đô thị, thiết kế trẻ trung, giá cả phải chăng</p>
+                        <p class="car-price">700.000.000 VNĐ</p>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=6" class="btn btn-detail">Chi tiết</a>
+                            <button class="btn btn-cart" onclick="addToCart(6, 'Kia Seltos 2024', '700.000.000')">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- PHẦN FOOTER - Thông tin cuối trang  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AutoViet</h3>
+                    <p>Showroom xe hơi uy tín hàng đầu Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên kết</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="cart.html">Giỏ hàng</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <p>Email: info@autoviet.vn</p>
+                    <p>Hotline: 1900 xxxx</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoViet. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- JAVASCRIPT - Xử lý thêm vào giỏ hàng  -->
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

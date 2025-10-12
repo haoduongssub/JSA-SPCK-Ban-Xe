@@ -1,0 +1,293 @@
+/* ===== RESET VÀ THIẾT LẬP CƠ BẢN ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #f5f5f0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER - THANH ĐIỀU HƯỚNG ===== */
+.header {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  position: relative;
+}
+
+.header .container {
+  position: relative;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.logo h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.logo a {
+  color: #f5f5f0;
+  text-decoration: none;
+}
+
+.navigation {
+  display: inline-block;
+  vertical-align: middle;
+  width: 68%;
+  text-align: right;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.nav-link {
+  color: #f5f5f0;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #d4af37;
+}
+
+.nav-link.active {
+  color: #d4af37;
+  border-bottom: 2px solid #d4af37;
+}
+
+/* ===== PHẦN XÁC THỰC - ĐĂNG NHẬP/ĐĂNG KÝ ===== */
+.auth-section {
+  padding: 80px 0;
+  min-height: calc(100vh - 400px);
+}
+
+/* Container chứa form */
+.auth-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Box chứa form đăng nhập/đăng ký */
+.auth-box {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+/* Tiêu đề form */
+.auth-title {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+.auth-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* ===== CÁC TRƯỜNG FORM ===== */
+.form-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+  border: 1px solid #d0d0d0;
+  background-color: #fafafa;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #d4af37;
+  background-color: #ffffff;
+}
+
+/* Thông báo lỗi/thành công */
+.form-message {
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+  display: none;
+}
+
+.form-message.error {
+  display: block;
+  background-color: #ffe6e6;
+  color: #cc0000;
+  border: 1px solid #ffcccc;
+}
+
+.form-message.success {
+  display: block;
+  background-color: #e6ffe6;
+  color: #008000;
+  border: 1px solid #ccffcc;
+}
+
+/* ===== NÚT SUBMIT ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #d4af37;
+  color: #1a1a1a;
+}
+
+.btn-primary:hover {
+  background-color: #c19b2e;
+}
+
+/* ===== CHUYỂN ĐỔI GIỮA ĐĂNG NHẬP VÀ ĐĂNG KÝ ===== */
+.auth-switch {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-link {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.auth-link:hover {
+  color: #c19b2e;
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #1a1a1a;
+  color: #f5f5f0;
+  padding: 50px 0 20px 0;
+}
+
+.footer-content {
+  text-align: left;
+  font-size: 0;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 0 1%;
+  font-size: 14px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #d4af37;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #f5f5f0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #d4af37;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #999;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .logo,
+  .navigation {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 10px 15px;
+  }
+
+  .auth-box {
+    padding: 40px 25px;
+  }
+
+  .footer-section {
+    width: 98%;
+    margin: 0 1% 20px 1%;
+  }
+}
