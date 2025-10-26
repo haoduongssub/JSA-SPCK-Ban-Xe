@@ -57,19 +57,19 @@
                     </div>
                 </div>
 
-                 <!-- Cột bên phải - Thông tin xe  -->
-                <div class="detail-info">
-                    <h1 class="car-title" id="carTitle">Đang tải...</h1>
-                    <p class="car-price" id="carPrice">0 VNĐ</p>
+                <!-- Cột bên phải - Thông tin xe -->
+                <div class="detail-info"> <!-- Khu vực hiển thị thông tin chính của xe -->
+                    <h1 class="car-title" id="carTitle">Đang tải...</h1> <!-- Tên xe -->
+                    <p class="car-price" id="carPrice">0 VNĐ</p> <!-- Giá xe -->
                     
-                    <div class="car-description">
+                    <div class="car-description"> <!-- Mô tả ngắn -->
                         <h3>Mô tả</h3>
                         <p id="carDescription">Đang tải thông tin...</p>
                     </div>
 
-                    <div class="car-specs">
+                    <div class="car-specs"> <!-- Thông số kỹ thuật -->
                         <h3>Thông số kỹ thuật</h3>
-                        <table class="specs-table">
+                        <table class="specs-table"> <!-- Bảng chứa thông tin kỹ thuật -->
                             <tr>
                                 <td class="spec-label">Hãng xe:</td>
                                 <td class="spec-value" id="specBrand">-</td>
@@ -105,56 +105,59 @@
                         </table>
                     </div>
 
-                    <div class="car-actions">
-                        <button class="btn btn-cart" id="addToCartBtn" onclick="addToCartFromDetail()">
+                    <div class="car-actions"> <!-- Các nút thao tác -->
+                        <button class="btn btn-cart" id="addToCartBtn" onclick="addToCartFromDetail()"> <!-- Nút thêm vào giỏ hàng -->
                             <!-- Thêm vào giỏ hàng -->
                         </button>
-                        <button class="btn btn-contact" onclick="window.location.href='contact.html'">
+                        <button class="btn btn-contact" onclick="window.location.href='contact.html'"> <!-- Nút liên hệ tư vấn -->
                             <!-- Liên hệ tư vấn -->
                         </button>
                     </div>
                 </div>
             </div>
 
-             <!-- Phần mô tả chi tiết  -->
-            <div class="detail-description">
+             <!-- Phần mô tả chi tiết -->
+            <div class="detail-description"> <!-- Hiển thị nội dung mô tả đầy đủ -->
                 <h2>Thông tin chi tiết</h2>
-                <div class="description-content" id="detailDescription">
+                <div class="description-content" id="detailDescription"> <!-- Phần này JS sẽ nạp nội dung chi tiết -->
                     <p>Đang tải thông tin chi tiết...</p>
                 </div>
             </div>
         </div>
     </section>
 
-     <!-- PHẦN FOOTER  -->
-    <footer class="footer">
+     <!-- PHẦN FOOTER -->
+    <footer class="footer"> <!-- Chân trang -->
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+            <div class="footer-content"> <!-- Các khối thông tin trong footer -->
+                <div class="footer-section"> <!-- Cột 1 -->
                     <h3>AutoViet</h3>
                     <p>Showroom xe hơi uy tín hàng đầu Việt Nam</p>
                 </div>
-                <div class="footer-section">
+
+                <div class="footer-section"> <!-- Cột 2 -->
                     <h4>Liên kết</h4>
-                    <ul class="footer-links">
+                    <ul class="footer-links"> <!-- Danh sách liên kết nhanh -->
                         <li><a href="index.html">Trang chủ</a></li>
                         <li><a href="cart.html">Giỏ hàng</a></li>
                         <li><a href="contact.html">Liên hệ</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+
+                <div class="footer-section"> <!-- Cột 3 -->
                     <h4>Liên hệ</h4>
-                    <p>Email: info@autoviet.vn</p>
-                    <p>Hotline: 1900 xxxx</p>
+                    <p>Email: info@autoviet.vn</p> <!-- Email công ty -->
+                    <p>Hotline: 1900 xxxx</p> <!-- Số hotline -->
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 AutoViet. Tất cả quyền được bảo lưu.</p>
+
+            <div class="footer-bottom"> <!-- Dòng cuối của footer -->
+                <p>&copy; 2025 AutoViet. Tất cả quyền được bảo lưu.</p> <!-- Thông báo bản quyền -->
             </div>
         </div>
     </footer>
 
-     <!-- JAVASCRIPT - Xử lý hiển thị chi tiết xe  -->
-    <script src="assets/js/car-detail.js"></script>
+     <!-- JAVASCRIPT - Xử lý hiển thị chi tiết xe -->
+    <script src="assets/js/car-detail.js"></script> <!-- Gọi file JS để tải và hiển thị dữ liệu xe -->
 </body>
 </html>

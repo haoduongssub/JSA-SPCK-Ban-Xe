@@ -1,398 +1,410 @@
 /* ===== RESET VÀ THIẾT LẬP CƠ BẢN ===== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Xóa toàn bộ khoảng cách mặc định ngoài phần tử */
+  padding: 0; /* Xóa toàn bộ khoảng cách trong mặc định */
+  box-sizing: border-box; /* Tính cả border và padding vào kích thước tổng thể của phần tử */
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #1a1a1a;
-  background-color: #f5f5f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Chọn font chữ hiển thị chính */
+  line-height: 1.6; /* Tăng khoảng cách giữa các dòng cho dễ đọc */
+  color: #1a1a1a; /* Màu chữ chính (đen xám đậm) */
+  background-color: #f5f5f0; /* Màu nền toàn trang là màu kem nhạt */
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 90%; /* Chiếm 90% chiều ngang của màn hình */
+  max-width: 1200px; /* Giới hạn tối đa chiều ngang là 1200px */
+  margin: 0 auto; /* Căn giữa nội dung theo chiều ngang */
 }
 
 /* ===== HEADER ===== */
 .header {
-  background-color: #1a1a1a;
-  padding: 20px 0;
-  position: relative;
+  background-color: #1a1a1a; /* Màu nền đen cho phần đầu trang */
+  padding: 20px 0; /* Khoảng cách trên và dưới 20px */
+  position: relative; /* Cho phép định vị các phần tử con tương đối */
 }
 
 .logo {
-  display: inline-block;
-  vertical-align: middle;
-  width: 30%;
+  display: inline-block; /* Cho phép logo đứng cùng hàng với menu */
+  vertical-align: middle; /* Căn giữa theo chiều dọc so với phần tử khác */
+  width: 30%; /* Chiếm 30% chiều ngang của header */
 }
 
 .logo h1 {
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-size: 28px; /* Cỡ chữ lớn cho tên thương hiệu */
+  font-weight: 600; /* Đậm vừa */
+  letter-spacing: 2px; /* Tăng khoảng cách giữa các chữ cái */
 }
 
 .logo a {
-  color: #f5f5f0;
-  text-decoration: none;
+  color: #f5f5f0; /* Màu chữ trắng kem */
+  text-decoration: none; /* Bỏ gạch chân dưới liên kết */
 }
 
 .navigation {
-  display: inline-block;
-  vertical-align: middle;
-  width: 68%;
-  text-align: right;
+  display: inline-block; /* Hiển thị cùng hàng với logo */
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+  width: 68%; /* Chiếm 68% chiều ngang của header */
+  text-align: right; /* Căn phải cho danh sách menu */
 }
 
 .nav-list {
-  list-style: none;
+  list-style: none; /* Bỏ dấu chấm đầu dòng của danh sách ul/li */
 }
 
 .nav-item {
-  display: inline-block;
-  margin-left: 30px;
+  display: inline-block; /* Mỗi mục menu nằm ngang */
+  margin-left: 30px; /* Tạo khoảng cách giữa các mục */
 }
 
 .nav-link {
-  color: #f5f5f0;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 8px 16px;
-  display: inline-block;
-  transition: color 0.3s;
+  color: #f5f5f0; /* Màu chữ trắng */
+  text-decoration: none; /* Bỏ gạch chân */
+  font-size: 16px; /* Kích thước chữ trung bình */
+  padding: 8px 16px; /* Tạo vùng nhấn lớn hơn cho dễ click */
+  display: inline-block; /* Giúp padding có hiệu lực */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover mượt */
 }
 
 .nav-link:hover {
-  color: #d4af37;
+  color: #d4af37; /* Khi rê chuột vào: đổi sang màu vàng ánh kim */
 }
 
 /* ===== PHẦN CHI TIẾT XE ===== */
 .detail-section {
-  padding: 40px 0 80px 0;
-  background-color: #f5f5f0;
+  padding: 40px 0 80px 0; /* Trên 40px, dưới 80px */
+  background-color: #f5f5f0; /* Nền màu kem nhạt */
 }
 
 /* Breadcrumb - Đường dẫn điều hướng */
 .breadcrumb {
-  margin-bottom: 30px;
-  font-size: 14px;
+  margin-bottom: 30px; /* Tạo khoảng cách dưới 30px */
+  font-size: 14px; /* Cỡ chữ nhỏ gọn */
 }
 
 .breadcrumb-link {
-  color: #666;
-  text-decoration: none;
-  transition: color 0.3s;
+  color: #666; /* Màu xám cho link breadcrumb */
+  text-decoration: none; /* Bỏ gạch chân */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
 }
 
 .breadcrumb-link:hover {
-  color: #d4af37;
+  color: #d4af37; /* Đổi sang vàng khi hover */
 }
 
 .breadcrumb-separator {
-  margin: 0 10px;
-  color: #999;
+  margin: 0 10px; /* Khoảng cách hai bên dấu “/” */
+  color: #999; /* Màu xám nhạt */
 }
 
 .breadcrumb-current {
-  color: #1a1a1a;
-  font-weight: 600;
+  color: #1a1a1a; /* Màu đen đậm cho mục hiện tại */
+  font-weight: 600; /* In đậm để nổi bật */
 }
 
 /* Nội dung chi tiết - Layout 2 cột */
 .detail-content {
-  background-color: #ffffff;
-  padding: 40px;
-  margin-bottom: 40px;
-  border: 1px solid #e0e0e0;
-  font-size: 0;
+  background-color: #ffffff; /* Nền trắng */
+  padding: 40px; /* Khoảng cách trong 40px */
+  margin-bottom: 40px; /* Cách dưới 40px */
+  border: 1px solid #e0e0e0; /* Viền xám nhạt */
+  font-size: 0; /* Xóa khoảng trắng giữa các phần tử inline-block (mẹo CSS) */
 }
 
 /* Cột bên trái - Hình ảnh */
 .detail-images {
-  display: inline-block;
-  vertical-align: top;
-  width: 58%;
-  padding-right: 40px;
-  font-size: 16px;
+  display: inline-block; /* Hiển thị song song với cột phải */
+  vertical-align: top; /* Căn lên trên cùng hàng */
+  width: 58%; /* Chiếm 58% chiều ngang */
+  padding-right: 40px; /* Tạo khoảng cách bên phải */
+  font-size: 16px; /* Trả lại kích thước chữ bình thường cho nội dung */
 }
 
 /* Hình ảnh chính */
 .main-image {
-  width: 100%;
-  height: 450px;
-  background-color: #f0f0f0;
-  margin-bottom: 20px;
-  overflow: hidden;
+  width: 100%; /* Chiếm toàn bộ chiều ngang khối cha */
+  height: 450px; /* Chiều cao cố định */
+  background-color: #f0f0f0; /* Màu nền xám nhạt nếu chưa có ảnh */
+  margin-bottom: 20px; /* Cách ảnh chính với phần dưới */
+  overflow: hidden; /* Ẩn phần ảnh vượt ra ngoài khung */
 }
 
 .main-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* Ảnh co giãn hết chiều ngang */
+  height: 100%; /* Ảnh co giãn hết chiều cao */
+  object-fit: cover; /* Cắt ảnh để vừa khung mà không méo */
 }
 
 /* Danh sách ảnh thumbnail */
 .thumbnail-list {
-  text-align: left;
-  font-size: 0;
+  text-align: left; /* Căn trái danh sách ảnh nhỏ */
+  font-size: 0; /* Loại bỏ khoảng trắng giữa các thumbnail */
 }
 
 .thumbnail {
-  display: inline-block;
-  width: 23%;
-  margin-right: 2%;
-  margin-bottom: 10px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
+  display: inline-block; /* Các ảnh nhỏ nằm ngang */
+  width: 23%; /* Mỗi ảnh chiếm 23% chiều ngang hàng */
+  margin-right: 2%; /* Cách nhau 2% */
+  margin-bottom: 10px; /* Khoảng cách dưới giữa các hàng thumbnail */
+  cursor: pointer; /* Biểu tượng chuột dạng tay khi di chuột vào */
+  border: 2px solid transparent; /* Khung trong suốt mặc định */
+  transition: border-color 0.3s; /* Hiệu ứng chuyển màu viền khi hover */
 }
 
 .thumbnail:hover {
-  border-color: #d4af37;
+  border-color: #d4af37; /* Khi rê chuột: viền vàng */
 }
 
 .thumbnail.active {
-  border-color: #d4af37;
+  border-color: #d4af37; /* Ảnh đang được chọn có viền vàng */
 }
 
 .thumbnail img {
-  width: 100%;
-  height: 80px;
-  object-fit: cover;
-  display: block;
+  width: 100%; /* Chiếm hết khung thumbnail */
+  height: 80px; /* Chiều cao cố định */
+  object-fit: cover; /* Cắt ảnh cho vừa khung mà không bị méo */
+  display: block; /* Tránh khoảng trắng dưới ảnh */
 }
 
 /* Cột bên phải - Thông tin */
 .detail-info {
-  display: inline-block;
-  vertical-align: top;
-  width: 40%;
-  font-size: 16px;
+  display: inline-block; /* Hiển thị cùng hàng với cột trái */
+  vertical-align: top; /* Căn đầu hàng trên cùng */
+  width: 40%; /* Chiếm 40% chiều ngang */
+  font-size: 16px; /* Trả lại kích thước chữ bình thường */
 }
 
 .car-title {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #1a1a1a;
-  line-height: 1.3;
+  font-size: 32px; /* Cỡ chữ lớn cho tiêu đề xe */
+  font-weight: 600; /* Đậm vừa */
+  margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+  color: #1a1a1a; /* Màu chữ đen */
+  line-height: 1.3; /* Giãn dòng nhẹ */
 }
 
 .car-price {
-  font-size: 28px;
-  font-weight: 700;
-  color: #d4af37;
-  margin-bottom: 30px;
+  font-size: 28px; /* Cỡ chữ to cho giá xe */
+  font-weight: 700; /* Đậm mạnh hơn tiêu đề */
+  color: #d4af37; /* Màu vàng ánh kim */
+  margin-bottom: 30px; /* Khoảng cách dưới giá */
 }
 
 /* Mô tả ngắn */
 .car-description {
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px; /* Cách phần dưới 30px */
+  padding-bottom: 30px; /* Tạo khoảng cách bên trong phía dưới */
+  border-bottom: 1px solid #e0e0e0; /* Đường gạch xám chia cách phần mô tả */
 }
 
+
+/* ==================== PHẦN MÔ TẢ XE ==================== */
 .car-description h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: #1a1a1a;
+  font-size: 18px;          /* Kích thước chữ tiêu đề mô tả */
+  font-weight: 600;         /* Độ đậm của chữ */
+  margin-bottom: 12px;      /* Khoảng cách dưới tiêu đề */
+  color: #1a1a1a;           /* Màu chữ đen đậm */
 }
 
 .car-description p {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #666;
+  font-size: 15px;          /* Kích thước chữ nội dung mô tả */
+  line-height: 1.7;         /* Chiều cao dòng để dễ đọc hơn */
+  color: #666;              /* Màu chữ xám nhẹ */
 }
 
-/* Bảng thông số kỹ thuật */
+
+/* ==================== BẢNG THÔNG SỐ KỸ THUẬT ==================== */
 .car-specs {
-  margin-bottom: 30px;
+  margin-bottom: 30px;      /* Khoảng cách dưới bảng thông số */
 }
 
 .car-specs h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #1a1a1a;
+  font-size: 18px;          /* Kích thước tiêu đề bảng */
+  font-weight: 600;         /* Độ đậm của chữ */
+  margin-bottom: 15px;      /* Khoảng cách dưới tiêu đề */
+  color: #1a1a1a;           /* Màu chữ đen */
 }
 
 .specs-table {
-  width: 100%;
-  border-collapse: collapse;
+  width: 100%;              /* Chiếm toàn bộ chiều rộng container */
+  border-collapse: collapse;/* Loại bỏ khoảng cách giữa các ô */
 }
 
 .specs-table tr {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0; /* Đường kẻ mảnh giữa các dòng */
 }
 
 .spec-label {
-  padding: 12px 0;
-  font-weight: 600;
-  color: #1a1a1a;
-  width: 45%;
+  padding: 12px 0;          /* Khoảng cách trên dưới của nhãn */
+  font-weight: 600;         /* Đậm hơn để nổi bật tên thông số */
+  color: #1a1a1a;           /* Màu chữ đen */
+  width: 45%;               /* Chiếm 45% bảng để cân đối với giá trị */
 }
 
 .spec-value {
-  padding: 12px 0;
-  color: #666;
+  padding: 12px 0;          /* Khoảng cách trên dưới cho giá trị */
+  color: #666;              /* Màu chữ xám nhẹ */
 }
 
-/* Các nút hành động */
+
+/* ==================== CÁC NÚT HÀNH ĐỘNG ==================== */
 .car-actions {
-  margin-top: 30px;
+  margin-top: 30px;         /* Khoảng cách trên phần nút */
 }
 
 .btn {
-  display: inline-block;
-  padding: 14px 30px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
-  transition: background-color 0.3s;
+  display: inline-block;     /* Hiển thị nút trên cùng một hàng */
+  padding: 14px 30px;        /* Khoảng đệm trong nút */
+  margin-right: 10px;        /* Khoảng cách giữa các nút */
+  margin-bottom: 10px;       /* Khoảng cách dưới (để khi xuống dòng vẫn đẹp) */
+  text-decoration: none;     /* Bỏ gạch chân */
+  border: none;              /* Bỏ viền mặc định */
+  cursor: pointer;           /* Hiển thị con trỏ tay khi rê chuột */
+  font-size: 15px;           /* Cỡ chữ nút */
+  font-weight: 600;          /* Đậm chữ */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
 }
 
+/* Nút thêm vào giỏ hàng */
 .btn-cart {
-  background-color: #d4af37;
-  color: #1a1a1a;
+  background-color: #d4af37; /* Màu vàng ánh kim */
+  color: #1a1a1a;            /* Màu chữ đen */
 }
 
 .btn-cart:hover {
-  background-color: #c19b2e;
+  background-color: #c19b2e; /* Màu vàng đậm hơn khi hover */
 }
 
+/* Nút liên hệ */
 .btn-contact {
-  background-color: #1a1a1a;
-  color: #f5f5f0;
+  background-color: #1a1a1a; /* Màu nền đen */
+  color: #f5f5f0;            /* Màu chữ trắng ngà */
 }
 
 .btn-contact:hover {
-  background-color: #333;
+  background-color: #333;    /* Đen sáng hơn khi hover */
 }
 
-/* Phần mô tả chi tiết */
+
+/* ==================== MÔ TẢ CHI TIẾT XE ==================== */
 .detail-description {
-  background-color: #ffffff;
-  padding: 40px;
-  border: 1px solid #e0e0e0;
+  background-color: #ffffff; /* Nền trắng */
+  padding: 40px;             /* Khoảng cách trong khối */
+  border: 1px solid #e0e0e0; /* Viền xám nhạt */
 }
 
 .detail-description h2 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 25px;
-  color: #1a1a1a;
+  font-size: 28px;           /* Cỡ chữ tiêu đề chính */
+  font-weight: 600;          /* Đậm chữ */
+  margin-bottom: 25px;       /* Khoảng cách dưới tiêu đề */
+  color: #1a1a1a;            /* Màu đen */
 }
 
 .description-content {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #666;
+  font-size: 15px;           /* Kích thước chữ nội dung chi tiết */
+  line-height: 1.8;          /* Giãn dòng dễ đọc */
+  color: #666;               /* Màu chữ xám nhẹ */
 }
 
 .description-content p {
-  margin-bottom: 15px;
+  margin-bottom: 15px;       /* Khoảng cách giữa các đoạn mô tả */
 }
 
-/* ===== FOOTER ===== */
+
+/* ==================== PHẦN CHÂN TRANG (FOOTER) ==================== */
 .footer {
-  background-color: #1a1a1a;
-  color: #f5f5f0;
-  padding: 50px 0 20px 0;
+  background-color: #1a1a1a; /* Nền đen */
+  color: #f5f5f0;            /* Chữ trắng ngà */
+  padding: 50px 0 20px 0;    /* Khoảng cách trên và dưới */
 }
 
 .footer-content {
-  text-align: left;
-  font-size: 0;
-  margin-bottom: 30px;
+  text-align: left;          /* Căn trái nội dung */
+  font-size: 0;              /* Xóa khoảng trắng giữa inline-blocks */
+  margin-bottom: 30px;       /* Khoảng cách dưới nội dung footer */
 }
 
 .footer-section {
-  display: inline-block;
-  vertical-align: top;
-  width: 31%;
-  margin: 0 1%;
-  font-size: 14px;
+  display: inline-block;     /* Hiển thị ngang từng phần */
+  vertical-align: top;       /* Căn đầu hàng */
+  width: 31%;                /* Mỗi phần chiếm khoảng 1/3 chiều ngang */
+  margin: 0 1%;              /* Khoảng cách giữa các phần */
+  font-size: 14px;           /* Kích thước chữ thông thường */
 }
 
 .footer-section h3,
 .footer-section h4 {
-  color: #d4af37;
-  margin-bottom: 15px;
-  font-weight: 600;
+  color: #d4af37;            /* Tiêu đề màu vàng ánh kim */
+  margin-bottom: 15px;       /* Khoảng cách dưới tiêu đề */
+  font-weight: 600;          /* Chữ đậm */
 }
 
 .footer-section p {
-  margin-bottom: 10px;
-  line-height: 1.8;
+  margin-bottom: 10px;       /* Khoảng cách giữa các đoạn */
+  line-height: 1.8;          /* Giãn dòng cho dễ đọc */
 }
 
+/* Danh sách liên kết trong footer */
 .footer-links {
-  list-style: none;
+  list-style: none;          /* Bỏ ký hiệu đầu dòng */
 }
 
 .footer-links li {
-  margin-bottom: 8px;
+  margin-bottom: 8px;        /* Khoảng cách giữa các link */
 }
 
 .footer-links a {
-  color: #f5f5f0;
-  text-decoration: none;
-  transition: color 0.3s;
+  color: #f5f5f0;            /* Màu chữ trắng ngà */
+  text-decoration: none;     /* Bỏ gạch chân */
+  transition: color 0.3s;    /* Hiệu ứng chuyển màu khi hover */
 }
 
 .footer-links a:hover {
-  color: #d4af37;
+  color: #d4af37;            /* Đổi sang màu vàng khi rê chuột */
 }
 
+/* Dòng bản quyền dưới cùng */
 .footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  font-size: 14px;
-  color: #999;
+  text-align: center;        /* Căn giữa nội dung */
+  padding-top: 20px;         /* Khoảng cách trên */
+  border-top: 1px solid #333;/* Đường kẻ phân cách */
+  font-size: 14px;           /* Kích thước chữ nhỏ */
+  color: #999;               /* Màu xám nhạt */
 }
 
-/* ===== RESPONSIVE ===== */
+
+/* ==================== RESPONSIVE (CHO MÀN HÌNH NHỎ) ==================== */
 @media (max-width: 768px) {
   .logo,
   .navigation {
-    display: block;
-    width: 100%;
-    text-align: center;
+    display: block;          /* Chuyển sang dạng khối dọc */
+    width: 100%;             /* Chiếm toàn bộ chiều ngang */
+    text-align: center;      /* Căn giữa nội dung */
   }
 
   .nav-item {
-    margin: 10px 15px;
+    margin: 10px 15px;       /* Khoảng cách giữa các mục menu */
   }
 
   .detail-content {
-    padding: 20px;
+    padding: 20px;           /* Giảm padding khi màn nhỏ */
   }
 
   .detail-images,
   .detail-info {
-    display: block;
-    width: 100%;
-    padding-right: 0;
-    margin-bottom: 30px;
+    display: block;          /* Chuyển về dạng dọc */
+    width: 100%;             /* Chiếm toàn chiều ngang */
+    padding-right: 0;        /* Bỏ khoảng cách phải */
+    margin-bottom: 30px;     /* Tạo khoảng cách giữa 2 phần */
   }
 
   .thumbnail {
-    width: 48%;
+    width: 48%;              /* Giảm kích thước ảnh nhỏ */
   }
 
   .footer-section {
-    width: 98%;
-    margin: 0 1% 20px 1%;
+    width: 98%;              /* Mỗi phần footer chiếm gần toàn chiều ngang */
+    margin: 0 1% 20px 1%;    /* Tạo khoảng cách giữa các phần */
   }
 }
+

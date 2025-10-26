@@ -1,180 +1,195 @@
-/* ===== RESET VÀ THIẾT LẬP CƠ BẢN ===== */
+/* =========================================================
+   RESET & CÀI ĐẶT CƠ BẢN
+   ---------------------------------------------------------
+   Mục đích: Đặt lại toàn bộ định dạng mặc định của trình duyệt
+   và thiết lập kiểu chữ, màu nền, bố cục chung.
+========================================================= */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0;                  /* Xóa toàn bộ lề mặc định */
+  padding: 0;                 /* Xóa toàn bộ khoảng đệm mặc định */
+  box-sizing: border-box;     /* Bao gồm cả border và padding trong kích thước phần tử */
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #1a1a1a;
-  background-color: #f5f5f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Font chữ chính */
+  line-height: 1.6;           /* Giãn dòng giúp dễ đọc hơn */
+  color: #1a1a1a;             /* Màu chữ chính (đen nhạt) */
+  background-color: #f5f5f0;  /* Màu nền tổng thể (xám sáng) */
 }
 
-/* Container chung cho toàn bộ nội dung */
+/* Container bao quanh toàn bộ nội dung chính của trang */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 90%;                 /* Chiếm 90% chiều rộng màn hình */
+  max-width: 1200px;          /* Giới hạn tối đa 1200px để tránh kéo giãn quá mức */
+  margin: 0 auto;             /* Căn giữa nội dung */
 }
 
-/* ===== HEADER - THANH ĐIỀU HƯỚNG ===== */
+
+/* =========================================================
+   HEADER - THANH ĐIỀU HƯỚNG
+========================================================= */
 .header {
-  background-color: #1a1a1a;
-  padding: 20px 0;
-  position: relative;
+  background-color: #1a1a1a;  /* Nền đen */
+  padding: 20px 0;            /* Khoảng cách trên và dưới */
+  position: relative;         /* Cho phép định vị các phần tử con */
 }
 
 .header .container {
-  position: relative;
+  position: relative;         /* Giúp sắp xếp linh hoạt logo và menu */
 }
 
-/* Logo bên trái */
+/* Logo (bên trái) */
 .logo {
-  display: inline-block;
-  vertical-align: middle;
-  width: 30%;
+  display: inline-block;      /* Hiển thị ngang hàng */
+  vertical-align: middle;     /* Căn giữa theo chiều dọc */
+  width: 30%;                 /* Chiếm 30% chiều ngang của header */
 }
 
 .logo h1 {
-  color: #f5f5f0;
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  color: #f5f5f0;             /* Màu chữ trắng ngà */
+  font-size: 28px;            /* Cỡ chữ lớn */
+  font-weight: 600;           /* Chữ đậm */
+  letter-spacing: 2px;        /* Giãn cách chữ */
 }
 
-/* Menu điều hướng bên phải */
+/* Menu điều hướng (bên phải) */
 .navigation {
-  display: inline-block;
-  vertical-align: middle;
-  width: 68%;
-  text-align: right;
+  display: inline-block;      /* Nằm cùng hàng với logo */
+  vertical-align: middle;     /* Căn giữa theo chiều dọc */
+  width: 68%;                 /* Chiếm phần còn lại */
+  text-align: right;          /* Căn toàn bộ menu sang phải */
 }
 
 .nav-list {
-  list-style: none;
+  list-style: none;           /* Bỏ ký hiệu đầu dòng */
 }
 
 .nav-item {
-  display: inline-block;
-  margin-left: 30px;
+  display: inline-block;      /* Các mục nằm ngang */
+  margin-left: 30px;          /* Tạo khoảng cách giữa các mục */
 }
 
 .nav-link {
-  color: #f5f5f0;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 8px 16px;
-  display: inline-block;
-  transition: color 0.3s;
+  color: #f5f5f0;             /* Màu chữ trắng ngà */
+  text-decoration: none;      /* Bỏ gạch chân */
+  font-size: 16px;            /* Cỡ chữ trung bình */
+  padding: 8px 16px;          /* Khoảng đệm cho dễ bấm */
+  display: inline-block;      /* Cho phép áp dụng padding */
+  transition: color 0.3s;     /* Hiệu ứng chuyển màu mượt */
 }
 
 .nav-link:hover {
-  color: #d4af37;
+  color: #d4af37;             /* Vàng ánh kim khi rê chuột */
 }
 
 .nav-link.active {
-  color: #d4af37;
-  border-bottom: 2px solid #d4af37;
+  color: #d4af37;             /* Màu vàng khi đang ở trang hiện tại */
+  border-bottom: 2px solid #d4af37; /* Gạch chân vàng để đánh dấu */
 }
 
-/* Nút đăng nhập đặc biệt */
+/* Nút đăng nhập nổi bật */
 .btn-login {
-  background-color: #d4af37;
-  color: #1a1a1a;
-  border-radius: 4px;
-  font-weight: 600;
+  background-color: #d4af37;  /* Nền vàng ánh kim */
+  color: #1a1a1a;             /* Chữ đen */
+  border-radius: 4px;         /* Bo góc nhẹ */
+  font-weight: 600;           /* Chữ đậm */
 }
 
 .btn-login:hover {
-  background-color: #c19b2e;
+  background-color: #c19b2e;  /* Màu vàng đậm hơn khi hover */
   color: #1a1a1a;
 }
 
-/* ===== HERO SECTION - BANNER CHÍNH ===== */
+
+/* =========================================================
+   HERO SECTION - BANNER CHÍNH
+========================================================= */
 .hero {
-  background-color: #2a2a2a;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/placeholder.svg?height=400&width=1200");
-  background-size: cover;
-  background-position: center;
-  padding: 120px 0;
-  text-align: center;
+  background-color: #2a2a2a;  /* Màu nền đen xám */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Lớp phủ tối */
+    url("/placeholder.svg?height=400&width=1200");           /* Ảnh nền */
+  background-size: cover;     /* Ảnh phủ kín khu vực */
+  background-position: center;/* Căn giữa ảnh */
+  padding: 120px 0;           /* Tạo khoảng trống lớn ở trên và dưới */
+  text-align: center;         /* Căn giữa nội dung */
 }
 
 .hero-content {
-  width: 80%;
-  margin: 0 auto;
+  width: 80%;                 /* Giới hạn độ rộng nội dung */
+  margin: 0 auto;             /* Căn giữa nội dung */
 }
 
 .hero-title {
-  color: #f5f5f0;
-  font-size: 48px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+  color: #f5f5f0;             /* Màu chữ trắng ngà */
+  font-size: 48px;            /* Cỡ chữ lớn */
+  font-weight: 300;           /* Chữ thanh */
+  margin-bottom: 20px;        /* Khoảng cách dưới tiêu đề */
+  letter-spacing: 1px;        /* Giãn nhẹ chữ */
 }
 
 .hero-description {
-  color: #e0e0e0;
-  font-size: 18px;
-  line-height: 1.8;
-  max-width: 700px;
-  margin: 0 auto;
+  color: #e0e0e0;             /* Chữ xám sáng */
+  font-size: 18px;            /* Cỡ chữ trung bình */
+  line-height: 1.8;           /* Giãn dòng để dễ đọc */
+  max-width: 700px;           /* Giới hạn chiều rộng đoạn mô tả */
+  margin: 0 auto;             /* Căn giữa mô tả */
 }
 
-/* ===== PHẦN DANH SÁCH XE ===== */
+
+/* =========================================================
+   PHẦN DANH SÁCH XE
+========================================================= */
 .cars-section {
-  padding: 80px 0;
-  background-color: #f5f5f0;
+  padding: 80px 0;            /* Khoảng cách trên/dưới */
+  background-color: #f5f5f0;  /* Nền xám sáng */
 }
 
 .section-title {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 300;
-  margin-bottom: 60px;
-  color: #1a1a1a;
-  letter-spacing: 1px;
+  text-align: center;         /* Căn giữa tiêu đề */
+  font-size: 36px;            /* Cỡ chữ lớn */
+  font-weight: 300;           /* Chữ thanh */
+  margin-bottom: 60px;        /* Khoảng cách dưới tiêu đề */
+  color: #1a1a1a;             /* Màu chữ đen */
+  letter-spacing: 1px;        /* Giãn nhẹ chữ */
 }
 
-/* Grid hiển thị xe - Sử dụng inline-block thay vì flexbox/grid */
+/* Lưới hiển thị các thẻ xe (dùng inline-block) */
 .cars-grid {
   text-align: center;
-  font-size: 0; /* Loại bỏ khoảng trắng giữa các inline-block */
+  font-size: 0;               /* Xóa khoảng trắng giữa các thẻ inline-block */
 }
 
 /* Mỗi thẻ xe */
 .car-card {
   display: inline-block;
   vertical-align: top;
-  width: 31%;
-  margin: 0 1% 40px 1%;
+  width: 31%;                 /* Mỗi thẻ chiếm khoảng 1/3 hàng */
+  margin: 0 1% 40px 1%;       /* Khoảng cách giữa các thẻ */
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   text-align: left;
-  font-size: 16px; /* Reset font-size */
-  transition: transform 0.3s;
+  font-size: 16px;            /* Đặt lại kích thước chữ */
+  transition: transform 0.3s; /* Hiệu ứng nổi lên khi hover */
 }
 
 .car-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px);/* Nổi nhẹ lên */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Hình ảnh xe */
+/* Ảnh xe */
 .car-image {
   width: 100%;
   height: 250px;
   overflow: hidden;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0;  /* Nền dự phòng khi chưa có ảnh */
 }
 
 .car-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;          /* Cắt ảnh vừa khung mà không bị méo */
 }
 
 /* Thông tin xe */
@@ -199,11 +214,11 @@ body {
 .car-price {
   font-size: 20px;
   font-weight: 700;
-  color: #d4af37;
+  color: #d4af37;             /* Màu vàng ánh kim cho giá */
   margin-bottom: 20px;
 }
 
-/* Các nút hành động */
+/* Nút hành động (xem chi tiết, thêm vào giỏ) */
 .car-actions {
   text-align: center;
 }
@@ -220,6 +235,7 @@ body {
   transition: background-color 0.3s;
 }
 
+/* Nút xem chi tiết */
 .btn-detail {
   background-color: #1a1a1a;
   color: #f5f5f0;
@@ -229,6 +245,7 @@ body {
   background-color: #333;
 }
 
+/* Nút thêm vào giỏ hàng */
 .btn-cart {
   background-color: #d4af37;
   color: #1a1a1a;
@@ -238,96 +255,18 @@ body {
   background-color: #c19b2e;
 }
 
-/* ===== FOOTER - CHÂN TRANG ===== */
+
+/* =========================================================
+   FOOTER - CHÂN TRANG
+========================================================= */
 .footer {
-  background-color: #1a1a1a;
-  color: #f5f5f0;
-  padding: 50px 0 20px 0;
+  background-color: #1a1a1a;  /* Nền đen */
+  color: #f5f5f0;             /* Chữ trắng ngà */
+  padding: 50px 0 20px 0;     /* Khoảng cách trên và dưới */
 }
 
 .footer-content {
   text-align: left;
-  font-size: 0;
+  font-size: 0;               /* Xóa khoảng trắng giữa inline-block */
   margin-bottom: 30px;
-}
-
-/* Các cột trong footer */
-.footer-section {
-  display: inline-block;
-  vertical-align: top;
-  width: 31%;
-  margin: 0 1%;
-  font-size: 14px;
-}
-
-.footer-section h3,
-.footer-section h4 {
-  color: #d4af37;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.footer-section p {
-  margin-bottom: 10px;
-  line-height: 1.8;
-}
-
-/* Danh sách liên kết trong footer */
-.footer-links {
-  list-style: none;
-}
-
-.footer-links li {
-  margin-bottom: 8px;
-}
-
-.footer-links a {
-  color: #f5f5f0;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-links a:hover {
-  color: #d4af37;
-}
-
-/* Phần bản quyền */
-.footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  font-size: 14px;
-  color: #999;
-}
-
-/* ===== RESPONSIVE - ĐIỀU CHỈNH CHO MÀN HÌNH NHỎ ===== */
-@media (max-width: 768px) {
-  /* Header responsive */
-  .logo,
-  .navigation {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-item {
-    margin: 10px 15px;
-  }
-
-  /* Hero responsive */
-  .hero-title {
-    font-size: 32px;
-  }
-
-  /* Card xe responsive - hiển thị 1 cột */
-  .car-card {
-    width: 98%;
-    margin: 0 1% 30px 1%;
-  }
-
-  /* Footer responsive */
-  .footer-section {
-    width: 98%;
-    margin: 0 1% 20px 1%;
-  }
 }
